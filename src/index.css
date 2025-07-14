@@ -1,0 +1,81 @@
+body{
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.stopwatch{
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.display-time{
+  font-family: monospace;
+  font-size: 5rem;
+}
+
+.stopwatch button{
+  margin-top: 20px;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.start-button{
+  background-color: rgb(84, 148, 84)
+}
+
+.start-button:hover{
+  background-color: rgb(57, 99, 57)
+}
+
+.stop-button{
+  background-color: rgb(185, 99, 93)
+}
+
+.stop-button:hover{
+  background-color: rgb(155, 83, 78)
+}
+
+.reset-button{
+  background-color: rgb(150, 155, 150)
+}
+
+.reset-button:hover{
+  background-color: rgb(100, 102, 100)
+}
+
+.record-button{
+  background-color: rgb(102, 104, 180)
+}
+
+.record-button:hover{
+  background-color: rgb(78, 80, 138)
+}
+
+
+
+
+
+.records-div h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.records-div li{
+  font-family: monospace;
+  font-size: 2rem;
+}
