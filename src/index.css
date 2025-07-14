@@ -1,3 +1,5 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+
 body{
   background-color: lightgrey;
   display: flex;
@@ -8,11 +10,19 @@ body{
 
 .stopwatch{
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid rgb(77, 76, 76);
   border-radius: 10px;
   padding: 50px;
   margin-top: 20px;
   text-align: center;
+}
+
+.stopwatch h2{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .display-time{
@@ -23,7 +33,7 @@ body{
 .stopwatch button{
   margin-top: 20px;
   font-size: 1.5rem;
-  padding: 10px 20px;
+  padding: 10px 10px 5px;
   margin-left: 5px;
   border: none;
   cursor: pointer;
@@ -64,15 +74,11 @@ body{
   background-color: rgb(78, 80, 138)
 }
 
-
-
-
-
 .records-div h2{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .records-div li{
