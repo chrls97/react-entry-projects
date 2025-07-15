@@ -55,6 +55,11 @@ const Stopwatch = () => {
     setRecordedTimes(r => [...r, formatTime()]);
   };
 
+  // Delete selected record
+  const deleteRecord = (i) => {
+    setRecordedTimes(recordedTimes.filter((_, index) => i !== index));
+  }
+
   // Format time into MM:SS:MS
   const formatTime = () => {
     // Calculate time units from milliseconds
@@ -76,34 +81,28 @@ const Stopwatch = () => {
   // Component JSX
   return (
     <div className='stopwatch'>
-      {/* Title */}
       <h2>Stopwatch</h2>
-      
-      {/* Time display */}
       <div className='display-time'>
         {formatTime()}
       </div>
       
-      {/* Control buttons with icons */}
       <button onClick={start} className='start-button' title='Start'>
-        <i className="fi fi-br-play"></i> {/* Play icon */}
+        <i className="fi fi-br-play"></i> 
       </button>
       <button onClick={stop} className='stop-button' title='Stop'>
-        <i className="fi fi-br-stop-circle"></i> {/* Stop icon */}
+        <i className="fi fi-br-stop-circle"></i> 
       </button>
       <button onClick={reset} className='reset-button' title='Reset'>
-        <i className="fi fi-br-undo"></i> {/* Reset icon */}
+        <i className="fi fi-br-undo"></i> 
       </button>
-      <button onClick={record} className='record-button' title='Record'>
-        <i className="fi fi-br-flag-alt"></i> {/* Flag icon */}
+      <button onClick={record} className='record-button' title='Record' disabled={!isRunning}>
+        <i className="fi fi-br-flag-alt"></i> 
       </button>
 
-      {/* Recorded times section */}
       <div className='records-div'>
         <h2>Recorded Time</h2>
-        {/* List of recorded times */}
         {recordedTimes.map((time, index) => (
-          <li key={index}>{time}</li>
+          <li key={index}>{time} <button onClick={() => deleteRecord(index)} className='stop-button' title='Delete'><i className="fi fi-bs-trash"></i></button></li>
         ))}
       </div>
     </div>
