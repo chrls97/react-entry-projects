@@ -1,0 +1,91 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:cursive;
+  background-color: rgb(242, 243, 201);
+}
+
+button{
+  cursor: pointer;
+}
+
+.notes{
+  margin-top: 50px;
+  text-align: center;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+}
+
+
+
+.notes input{
+  font-size: 21px;
+  padding:  5px 10px;
+  border: 0px solid gray;
+  color: rgb(34, 33, 33);
+  font-family:cursive;
+}
+
+.btn-add{
+  font-size: 20px;
+  border: 1px solid gray;
+  color: rgb(255, 255, 255);
+  background-color: rgb(142, 194, 142);
+  padding: 8px 11px 6px;
+  border: 0;
+  transition: 0.3s ease;
+}
+
+.btn-add:hover{
+  background-color: rgb(72, 124, 72);
+}
+
+
+.notes-list table{
+  font-size: 25px;
+  width: 100%;
+}
+
+td button{
+  font-size: 20px;
+  align-items: right;
+  border: 0;
+  transition: 0.3s ease;
+  color: white;
+  padding: 4px 5px 0px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.remove-btn{
+  background-color: rgb(214, 122, 122);
+}
+
+.remove-btn:hover{
+  background-color: rgb(139, 81, 81);
+}
+
+.up-btn{
+  background-color: rgb(122, 146, 214);
+}
+
+.up-btn:hover{
+  background-color: rgb(73, 87, 126);
+}
+
+.down-btn{
+  background-color: rgb(158, 159, 163);
+}
+
+.down-btn:hover{
+  background-color: rgb(116, 117, 119);
+}
+
+
