@@ -101,7 +101,7 @@ const Stopwatch = () => {
 
       <div className='records-div'>
         <h2>Recorded Time</h2>
-        {recordedTimes.map((time, index) => (
+        {recordedTimes.slice().sort((b, a) => a - b).map((time, index) => (
           <li key={index}>{time} <button onClick={() => deleteRecord(index)} className='stop-button' title='Delete'><i className="fi fi-bs-trash"></i></button></li>
         ))}
       </div>
