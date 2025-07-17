@@ -8,17 +8,11 @@ import EditTodoForm from './EditTodoForm';
 import { v4 as uuidv4 } from 'uuid';
 //TOAST
 import { ToastContainer, toast } from 'react-toastify';
-
-
-
-
 uuidv4();
 
 const TodoWrapper = () => {
 
-
   const [todos, setTodos] = useState([]);
-
   // State for storing IDs of checked todos
   const [checkedTodos, setCheckedTodos] = useState([]);
   
@@ -49,7 +43,7 @@ const TodoWrapper = () => {
 
 
   // Function to handle checkbox toggle
-  const handleCheck = (id) => {
+  const handleCheck = id => {
     setCheckedTodos(prev => {
       // If the ID is already in the array, remove it (uncheck)
       if (prev.includes(id)) {
