@@ -1,11 +1,16 @@
 import React from 'react';
+import { 
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider
+} from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
-
-import { Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import RoutLayout from './layout/RoutLayout';
+import RoutLayout from './layout/RouteLayout';
 import ContactLayout from './layout/ContactLayout';
 import ContactInfo from './components/ContactInfo';
 import ContactForm from './components/ContactForm';
